@@ -1,20 +1,5 @@
-let skillsButton = $('.skills-button')
-console.log(skillsButton)
-skillsButton.on("click", function(e){
-	let skills = $('.skills-section')[0]
-	let arrow = $('.skills-button i')[0]
-	e.preventDefault()
-	if (skills.style.maxHeight){
-		skills.style.maxHeight = null
-		arrow.classList.remove("fa-chevron-up")
-		arrow.classList.add("fa-chevron-down")
-	}else{
-		skills.style.maxHeight = skills.scrollHeight + "px"
-		arrow.classList.remove("fa-chevron-down")
-		arrow.classList.add("fa-chevron-up")
 
-	}
-})
+
 
 (function($) {
 
