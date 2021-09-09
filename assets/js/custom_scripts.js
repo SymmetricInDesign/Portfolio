@@ -1,3 +1,4 @@
+$("html, body").animate({scrollTop: 0}, "slow")
 let skillsButton = $('.skills-button')
 skillsButton.on("click", expandSkills)
 let copyEmailLink = $("#copy-email-link")
@@ -33,6 +34,6 @@ function expandSkills(e){
 
 function copy(text){
     navigator.clipboard.writeText(text).then(()=>{
-        alert("Copied to clipboard: " + text);
+        // alert("Copied to clipboard: " + text);
     });
 }
