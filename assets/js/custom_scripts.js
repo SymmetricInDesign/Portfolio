@@ -34,6 +34,6 @@ function expandSkills(e){
 
 function copy(text){
     navigator.clipboard.writeText(text).then(()=>{
-        // alert("Copied to clipboard: " + text);
+        console.log("copied to clipboard: " + text)
     });
 }
